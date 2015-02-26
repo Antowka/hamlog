@@ -18,3 +18,9 @@ Route::get('/', function(){
     	return View::make('dashboard')->with('user', Auth::user());
     }
 });
+
+/*
+ * Users
+ */
+Route::post('/', "UserController@login");
+Route::get('logout', "UserController@logout");

@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'hamlog',
+			'host'      => '127.0.0.1',
+			'database'  => 'ham_log',
 			'username'  => 'root',
-			'password'  => 'la136dop',
+			'password'  => 'qty901',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_general_ci',
 			'prefix'    => '',

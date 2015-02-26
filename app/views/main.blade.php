@@ -7,20 +7,20 @@
 
                         <!-- if there are login errors, show them here -->
                         <p>
-                                {{ $errors->first('login') }}
+                                {{ $errors->first('email') }}
                                 {{ $errors->first('password') }}
                         </p>
 
                         <div class="row">
-                           {{ Form::text('login', Input::old('login'), array('placeholder' => 'login', 'class'=>'form-control')) }}
+                           {{ Form::text('email', Input::old('email'), array('placeholder' => 'email', 'class'=>'form-control')) }}
                         </div>
 
                         <div class="row">
-                                {{ Form::password('password', array('placeholder' => 'password', 'class'=>'form-control')) }}
+                           {{ Form::password('password', array('placeholder' => 'password', 'class'=>'form-control')) }}
                         </div>
                         
                         <div class="row">
-                            {{ Form::submit('LogIn', array("class"=>"btn btn-primary")) }}
+                           {{ Form::submit('LogIn', array("class"=>"btn btn-primary")) }}
                         </div>
             {{ Form::close() }}
         </div>
