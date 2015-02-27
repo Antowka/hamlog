@@ -1,22 +1,22 @@
-    <footer>
 
-    </footer>
-
+    <!-- Libs -->
     {{ HTML::script('js/angular.min.js'); }}
     {{ HTML::script('js/bootstrap.min.js'); }}
-    
-    {{ HTML::script('js/libs/ng-table.min.js'); }}    
-    
-    {{ HTML::script('js/controllers/userCtrl.js'); }}
-    {{ HTML::script('js/services/userService.js'); }}
-    
-    {{ HTML::script('js/controllers/tasksCtrl.js'); }}
-    {{ HTML::script('js/services/tasksService.js'); }}
+    {{ HTML::script('js/libs/ng-table.min.js'); }}
+    {{ HTML::script('js/libs/ui-bootstrap-tpls-0.11.0.min.js'); }}
 
-    {{ HTML::script('js/controllers/companyCtrl.js'); }}
-    {{ HTML::script('js/services/companyService.js'); }}
-    
-    {{ HTML::script('js/directives/derective.unique_email.js'); }}
+    <!-- Controllers -->
+    {{ HTML::script('js/controllers/mainCtrl.js'); }}
+    {{ HTML::script('js/controllers/logCtrl.js'); }}
+    {{ HTML::script('js/controllers/dxclrCtrl.js'); }}
+
+    <!-- Service -->
+    {{ HTML::script('js/services/mainService.js'); }}
+    {{ HTML::script('js/services/logService.js'); }}
+    {{ HTML::script('js/services/dxclrService.js'); }}
+
+    <!-- Directives -->
+
 
     {{ HTML::script('js/app.js'); }}
     

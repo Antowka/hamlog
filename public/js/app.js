@@ -1,11 +1,8 @@
-var commentApp = angular.module('userApp', [
-	'userCtrl',
-	'tasksCtrl',
-	'companyCtrl',
-	'userService',  
-	'tasksService',
-	'companyService',
-	'formsDirectives',
+angular.module('hamLog', [
+	'mainCtrl',
+	'logCtrl',
+	'dxclrCtrl',
+	'ui.bootstrap'
 	], function($interpolateProvider){
 	
 	$interpolateProvider.startSymbol('<%');

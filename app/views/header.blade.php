@@ -8,4 +8,5 @@
     {{ HTML::style('css/ng-table.min.css'); }}
     {{ HTML::script('js/jquery-1.11.1.min.js'); }}
 </head>
-<body>
+<body ng-app="hamLog">
+

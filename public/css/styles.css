@@ -30,5 +30,21 @@ and open the template in the editor.
        .login-form .row {
            margin: 10px 0;
        }
+
+		.log-form {
+			margin: 15px 0 0 -31px;
+			width: 92%;
+			text-align: left;
+		}
+
+		.log-form input{
+			margin: 0 5px 15px 0;
+		}
+
+		.log-form textarea{
+			width: 98%;
+		}
+
+
        
 
