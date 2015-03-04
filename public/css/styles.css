@@ -42,7 +42,12 @@ and open the template in the editor.
 		}
 
 		.log-form textarea{
-			width: 98%;
+			width: 317px;
+		}
+
+		#datetimepicker {
+			width: 317px;
+			margin: -2px 0 15px 0;
 		}
 
 

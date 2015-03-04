@@ -53,12 +53,31 @@
                 <div class="container">
 
                     <div class="col-md-4">
-                        <form class="log-form">
-                            <input class="callsign-fl" placeholder="CallSign">
-                            <input class="freq-fl" placeholder="Frequency">
-                            <input class="datetime-fl" placeholder="Date Time">
-                            <input class="qth-fl" placeholder="QTH">
-                            <textarea class="comment-fl" placeholder="Comment"></textarea>
+                        <form class="log-form" ng-submit="addLog()">
+                            <div class="row">
+                                <input ng-model="log.callsign" class="callsign-fl" placeholder="CallSign">
+                                <input ng-model="log.freq" class="freq-fl" placeholder="Frequency">
+                            </div>
+
+                            <div class="row">
+                                <input ng-model="log.modulation" class="mod-fl" placeholder="Modes">
+                                <input ng-model="log.qth" class="qth-fl" placeholder="QTH">
+                            </div>
+
+                            <div class="row">
+                                <div class='input-group date' id='datetimepicker'>
+                                    <input date-picker-custom ng-model="log.date" data-format="yyyy-MM-dd HH:mm:ss" class="form-control datetime-fl" placeholder="Date Time">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <textarea ng-model="log.comment" class="comment-fl" placeholder="Comment"></textarea>
+                            </div>
+
+                            <input class="btn btn-default" type="submit" value="Submit">
                         </form>
                     </div>
 

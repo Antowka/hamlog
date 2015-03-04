@@ -6,6 +6,7 @@
     {{ HTML::style('css/bootstrap.min.css'); }}
     {{ HTML::style('css/styles.css'); }}
     {{ HTML::style('css/ng-table.min.css'); }}
+    {{ HTML::style('css/datepicker/bootstrap-datetimepicker.css'); }}
     {{ HTML::script('js/jquery-1.11.1.min.js'); }}
 </head>
 <body ng-app="hamLog">

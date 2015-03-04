@@ -24,3 +24,8 @@ Route::get('/', function(){
  */
 Route::post('/', "UserController@login");
 Route::get('logout', "UserController@logout");
+
+/*
+ * Tasks
+ */
+Route::controller('log', 'LogController');
